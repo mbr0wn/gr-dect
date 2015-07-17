@@ -1,0 +1,17 @@
+<block>
+  <name>Burst checker vbb</name>
+  <key>dect_burst_checker_vbb</key>
+  <category>DECT</category>
+  <import>import dect</import>
+  <make>dect.burst_checker_vbb()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <vlen>8</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>8</vlen>
+  </source>
+</block>

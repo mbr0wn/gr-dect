@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<block>
+  <name>afield_slicor_bb</name>
+  <key>dect_afield_slicor_bb</key>
+  <category>DECT</category>
+  <import>import dect</import>
+  <make>dect.afield_slicor_bb($tag_name, $chan_index)</make>
+  <param>
+    <name>tag name</name>
+    <key>tag_name</key>
+    <value>sauerkraut</value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Channel Index</name>
+    <key>chan_index</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>64</vlen>
+  </source>
+</block>
