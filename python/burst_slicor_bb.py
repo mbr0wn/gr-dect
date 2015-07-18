@@ -52,7 +52,6 @@ class burst_slicor_bb(gr.sync_block):
                         pmt.to_pmt({'chan': self.chan_idx}),
                         pmt.to_pmt(input_items[0][rel_offset:rel_offset+self.burst_length_bits])
                 )
-                print str(pdu)
                 self.message_port_pub(
                         pmt.intern('burst'),
                         pdu
