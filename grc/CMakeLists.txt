@@ -22,5 +22,6 @@ install(FILES
     dect_burst_slicor_bb.xml
     dect_afield_analyzer_b.xml
     dect_burst_checker_vbb.xml
+    dect_pipe_sink.xml
     DESTINATION share/gnuradio/grc/blocks
 )

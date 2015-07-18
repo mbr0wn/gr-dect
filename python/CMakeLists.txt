@@ -34,6 +34,7 @@ GR_PYTHON_INSTALL(
     afield_slicor_bb.py
     burst_slicor_bb.py
     afield_analyzer_b.py
+    pipe_sink.py
     DESTINATION ${GR_PYTHON_DIR}/dect
 )
 

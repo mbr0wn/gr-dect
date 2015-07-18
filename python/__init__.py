@@ -34,4 +34,5 @@ except ImportError:
 from afield_slicor_bb import afield_slicor_bb
 from burst_slicor_bb import burst_slicor_bb
 from afield_analyzer_b import afield_analyzer_b
+from pipe_sink import pipe_sink
 #
