@@ -19,6 +19,8 @@
 
 install(FILES
     dect_afield_slicor_bb.xml
+    dect_burst_slicor_bb.xml
     dect_afield_analyzer_b.xml
-    dect_burst_checker_vbb.xml DESTINATION share/gnuradio/grc/blocks
+    dect_burst_checker_vbb.xml
+    DESTINATION share/gnuradio/grc/blocks
 )

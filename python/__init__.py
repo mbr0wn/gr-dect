@@ -32,5 +32,6 @@ except ImportError:
 
 # import any pure python here
 from afield_slicor_bb import afield_slicor_bb
+from burst_slicor_bb import burst_slicor_bb
 from afield_analyzer_b import afield_analyzer_b
 #

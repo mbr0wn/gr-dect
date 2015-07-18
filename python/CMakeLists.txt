@@ -32,7 +32,9 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     afield_slicor_bb.py
-    afield_analyzer_b.py DESTINATION ${GR_PYTHON_DIR}/dect
+    burst_slicor_bb.py
+    afield_analyzer_b.py
+    DESTINATION ${GR_PYTHON_DIR}/dect
 )
 
 ########################################################################

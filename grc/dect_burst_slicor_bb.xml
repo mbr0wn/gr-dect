@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<block>
+  <name>burst_slicor_bb</name>
+  <key>dect_burst_slicor_bb</key>
+  <category>DECT</category>
+  <import>import dect</import>
+  <make>dect.burst_slicor_bb($tag_name, $chan_index)</make>
+  <param>
+    <name>tag name</name>
+    <key>tag_name</key>
+    <value>sauerkraut</value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Channel Index</name>
+    <key>chan_index</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>burst</name>
+    <type>message</type>
+  </source>
+</block>
