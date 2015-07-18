@@ -249,7 +249,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -837,6 +837,41 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>dect_pipe_sink</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1160, 133)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>dect_pipe_sink_0</value>
+    </param>
+    <param>
+      <key>fifo</key>
+      <value>/tmp/dect-test</value>
     </param>
   </block>
   <block>
@@ -2318,10 +2353,22 @@
     <sink_key>print</sink_key>
   </connection>
   <connection>
+    <source_block_id>dect_burst_smartz_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
+  </connection>
+  <connection>
     <source_block_id>dect_burst_smartz_0_0</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>dect_burst_smartz_0_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
   </connection>
   <connection>
     <source_block_id>dect_burst_smartz_0_0_0</source_block_id>
@@ -2330,10 +2377,22 @@
     <sink_key>print</sink_key>
   </connection>
   <connection>
+    <source_block_id>dect_burst_smartz_0_0_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
+  </connection>
+  <connection>
     <source_block_id>dect_burst_smartz_0_0_0_0</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>dect_burst_smartz_0_0_0_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
   </connection>
   <connection>
     <source_block_id>dect_burst_smartz_0_0_0_0_0</source_block_id>
@@ -2342,10 +2401,22 @@
     <sink_key>print</sink_key>
   </connection>
   <connection>
+    <source_block_id>dect_burst_smartz_0_0_0_0_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
+  </connection>
+  <connection>
     <source_block_id>dect_burst_smartz_0_0_0_0_0_0</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>dect_burst_smartz_0_0_0_0_0_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
   </connection>
   <connection>
     <source_block_id>dect_burst_smartz_0_0_0_0_1</source_block_id>
@@ -2354,10 +2425,22 @@
     <sink_key>print</sink_key>
   </connection>
   <connection>
+    <source_block_id>dect_burst_smartz_0_0_0_0_1</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
+  </connection>
+  <connection>
     <source_block_id>dect_burst_smartz_0_0_1</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>dect_burst_smartz_0_0_1</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
   </connection>
   <connection>
     <source_block_id>dect_burst_smartz_0_1</source_block_id>
@@ -2366,16 +2449,34 @@
     <sink_key>print</sink_key>
   </connection>
   <connection>
+    <source_block_id>dect_burst_smartz_0_1</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
+  </connection>
+  <connection>
     <source_block_id>dect_burst_smartz_0_1_0</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print</sink_key>
   </connection>
   <connection>
+    <source_block_id>dect_burst_smartz_0_1_0</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
+  </connection>
+  <connection>
     <source_block_id>dect_burst_smartz_0_2</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>dect_burst_smartz_0_2</source_block_id>
+    <sink_block_id>dect_pipe_sink_0</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>burst</sink_key>
   </connection>
   <connection>
     <source_block_id>pfb_channelizer_ccf_0</source_block_id>
